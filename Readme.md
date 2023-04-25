@@ -1,5 +1,9 @@
-# SVG Spotify widget 🎶
+# Spotify Widget dinamic
+This is clone from
 
+## SVG Spotify widget 🎶
+
+![If you see this try reloading the page!](https://notom.vercel.app/spotify)
 
 ## Set up 👀
 

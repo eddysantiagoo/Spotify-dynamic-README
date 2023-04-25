@@ -57,7 +57,7 @@ def spotify():
     
 @app.route('/')
 def hi():
-     return "Nothing her, go to /spotify :p"
+     return "Not too much to se here, go to /spotify :p"
 
 @app.route('/spotify')
 def cool():
