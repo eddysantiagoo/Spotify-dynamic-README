@@ -72,7 +72,7 @@ def spotify():
     
 @app.route('/')
 def hi():
-     return "Not too much to se here, go to /spotify :p"
+     return render_template('index.html')
 
 @app.route('/spotify')
 def cool():
