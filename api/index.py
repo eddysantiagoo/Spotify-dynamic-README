@@ -15,8 +15,10 @@ import os
 
 cwd = Path.cwd()
 cwd = re.sub(r"\\",r"/",str(cwd))
-CLIENT_ID = os.environ['CLIENT_ID']
-CLIENT_SECRET = os.environ['CLIENT_SECRET']
+
+CLIENT_ID = 'CLIENT_ID' 
+CLIENT_SECRET = 'CLIENT_SECRET'
+
 scope = "user-read-playback-state user-read-recently-played"
 redirect_uri = "http://127.0.0.1:5000/spotify"
 
