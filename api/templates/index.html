@@ -8,93 +8,61 @@
       href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
   </head>
   <body style="background-color: rgb(12, 11, 11); margin: 0px">
     <!-- Boton para ir al widget -->
-    <div style="text-align: center">
+    <div>
       <a
         href="https://spotify-dynamic-readme.vercel.app/spotify"
         rel="noopener noreferrer"
-        style="
-          font-family: 'Arial', sans-serif;
-          font-size: 20px;
-          font-weight: bold;
-          text-decoration: none;
-          color: #ffffff;
-          background-color: #00e78b8c;
-          border-radius: 8px;
-          padding: 10px 20px;
-          margin: 15px;
-          display: inline-block;
-        "
+        class="button1"
       >
         Go to the widget :)
       </a>
     </div>
     <!-- Imagen central -->
-    <img
-      src="https://imgbox.io/ib/YCLTJ8791p.jpg"
-      alt="Imagen inicio"
-      style="
-        display: block;
-        margin: auto;
-        max-width: 100%;
-        height: auto;
-        box-shadow: 0px 0px 50px rgb(70, 70, 70);
-        border-radius: 10px;
-        width: 920px;
-      "
-    />
+    <div class="card">
+      <div class="container">
+        <img
+          src="https://imgbox.io/ib/YCLTJ8791p.jpg"
+          alt="Imagen inicio Spotify Widget"
+          class="img"
+        />
+      </div>
+    </div>
     <!-- Boton repositorio -->
-    <div style="text-align: center">
+    <div>
       <a
         href="https://github.com/eddysantiagoo/Spotify-dynamic-README.git"
         target="_blank"
         rel="noopener noreferrer"
-        style="
-          font-family: 'Arial', sans-serif;
-          font-size: 20px;
-          font-weight: bold;
-          text-decoration: none;
-          border: 2px solid rgb(211, 211, 211);
-          color: #ffffff;
-          background-color: #111111;
-          border-radius: 8px;
-          padding: 10px 20px;
-          margin: 15px;
-          display: inline-block;
-        "
+        class="button2"
       >
         Repository :)
       </a>
     </div>
     <!-- Footer -->
-    <footer
-      style="
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: #00e78b8c;
-        font-family: 'Arial', sans-serif;
-        font-weight: bold;
-        color: #ffffff;
-        padding: 8px;
-        font-size: 16px;
-        text-align: inherit;
-      "
-    >
-      <div
-        style="display: flex; flex-wrap: wrap; justify-content: space-between"
-      >
-        <div style="flex-basis: 50%; text-align: left">
-          <p>2023</p>
-        </div>
-        <div style="flex-basis: 50%; text-align: right">
-          <p style="margin-right: 20px">por: Eddy Santiago <3</p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <span id="year">2023</span> - Por: Eddy Santiago <3</p>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- Script para el efecto tilt 3d -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        // max: 25,
+        // speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
   </body>
 </html>
