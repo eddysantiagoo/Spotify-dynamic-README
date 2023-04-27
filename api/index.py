@@ -11,14 +11,21 @@ import random
 from spotipy import oauth2
 import os
 
-
-
 cwd = Path.cwd()
 cwd = re.sub(r"\\",r"/",str(cwd))
 
-CLIENT_ID = 'CLIENT_ID' 
-CLIENT_SECRET = 'CLIENT_SECRET'
+#If you have problems adding your environment variables "CLIENT_ID and "CLIENT_SECRET"
+#I recommend that you change the way of declaring to this way
 
+#CLIENT_ID = 'INSIDE YOUR CLIENT_ID' 
+#CLIENT_SECRET = 'INSIDE YOUR CLIENT_SECRET' 
+
+#After of that run the index.py and this will open a window on your Browser
+#The only you need to do is provide access to your Spotify Account
+# @Santiago
+
+CLIENT_ID = os.environ['CLIENT_ID'] 
+CLIENT_SECRET = os.environ['CLIENT_SECRET']
 scope = "user-read-playback-state user-read-recently-played"
 redirect_uri = "http://127.0.0.1:5000/spotify"
 
