@@ -1,6 +1,9 @@
-# Spotify Widget dinamic
-This is clone from
+# Spotify-dynamic-README 💚
+This repo is cloned from the user [Om-Thorat](https://github.com/Om-Thorat/Readme-Spotify-Now-Playing) all the credits of the original idea is for him, i only make a few changes in the code :)
 
+![](./assets/designs.jpg)
+
+The tutorial below about how to create your own widget is also from [Om-Thorat](https://github.com/Om-Thorat/Readme-Spotify-Now-Playing) enjoy!💚
 ## SVG Spotify widget 🎶
 
 ![If you see this try reloading the page!](https://notom.vercel.app/spotify)
