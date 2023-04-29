@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url("https://fonts.cdnfonts.com/css/poppins");
 
 body {
   font-family: "Poppins", sans-serif;
@@ -16,7 +16,7 @@ body {
   text-decoration: none;
   border-radius: 25px;
   padding: 10px 20px;
-  margin: 15px;
+  margin: 45px 0 15px 0px;
   display: inline-block;
 }
 
@@ -29,7 +29,7 @@ body {
   background-color: #111111;
   border-radius: 25px;
   padding: 10px 20px;
-  margin: 15px;
+  margin: -5px 0 18px 0;
   display: inline-block;
 }
 
@@ -60,9 +60,14 @@ section h3 {
 
 .card-text {
   background-color: #181616;
-  margin: 0px 0 22px;
-  border-radius: 16px;
+  margin: 28px 0 22px;
+  border-radius: 20px;
   padding: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-text:hover {
+  box-shadow: 0px 0px 30px #1ae68c;
 }
 
 footer {
@@ -77,8 +82,12 @@ footer a {
   color: #000000;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 960px) {
   section {
     margin: 0px 12px 10px 12px;
+  }
+
+  .img {
+    width: 90%;
   }
 }
